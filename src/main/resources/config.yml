@@ -1,0 +1,2 @@
+# The teleport delay (milliseconds) needs to big enough that the player who jumped to the server has already joined.
+TeleportDelay: 20

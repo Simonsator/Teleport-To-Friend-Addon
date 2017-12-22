@@ -17,7 +17,7 @@ public class TTFBungeeConfig extends ConfigurationCreator {
 	}
 
 	private void loadDefaults() {
-		set("TeleportDelay", 3);
+		set("TeleportDelay", 150);
 		set("TeleportToPlayerServers", "lobby", "survival");
 		set("Permission", "");
 	}

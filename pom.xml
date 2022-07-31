@@ -19,6 +19,42 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.3.0
+				</version> <!-- Make sure to always use the latest version (https://maven.apache.org/plugins/maven-shade-plugin/) -->
+				<configuration>
+					<dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml
+					</dependencyReducedPomLocation>
+					<relocations>
+						<relocation>
+							<pattern>io.papermc.lib</pattern>
+							<shadedPattern>de.simonsator.partyandfriends.extentions.teleporttofriends.paperlib
+							</shadedPattern> <!-- Replace this -->
+						</relocation>
+					</relocations>
+					<filters>
+						<filter>
+							<artifact>*:*</artifact>
+							<excludes>
+								<exclude>META-INF/*.SF</exclude>
+								<exclude>META-INF/*.DSA</exclude>
+								<exclude>META-INF/*.RSA</exclude>
+								<exclude>META-INF/*.MF</exclude>
+							</excludes>
+						</filter>
+					</filters>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 		<resources>
 			<resource>
@@ -49,14 +85,14 @@
 		<dependency>
 			<groupId>net.md-5</groupId>
 			<artifactId>bungeecord-api</artifactId>
-			<version>LATEST</version>
+			<version>1.19-R0.1-SNAPSHOT</version>
 			<type>jar</type>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.md-5</groupId>
 			<artifactId>bungeecord-api</artifactId>
-			<version>LATEST</version>
+			<version>1.19-R0.1-SNAPSHOT</version>
 			<type>javadoc</type>
 			<scope>provided</scope>
 		</dependency>
@@ -75,38 +111,15 @@
 		</dependency>
 		<dependency>
 			<groupId>de.simonsator</groupId>
-			<artifactId>Party-and-Friends-For-Bungeecord-MySQL</artifactId>
-			<version>1.0.157</version>
+			<artifactId>PAF-Bungeecord-Extended-Core</artifactId>
+			<version>1.0.233</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>de.simonsator</groupId>
-			<artifactId>DevelopmentPAFSpigot</artifactId>
-			<version>1.0.67</version>
+			<artifactId>Party-and-Friends-GUI-FinalBuild</artifactId>
+			<version>1.0.115</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-
-	<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-shade-plugin</artifactId>
-			<version>3.10.1</version> <!-- Make sure to always use the latest version (https://maven.apache.org/plugins/maven-shade-plugin/) -->
-			<configuration>
-				<dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml</dependencyReducedPomLocation>
-				<relocations>
-					<relocation>
-						<pattern>io.papermc.lib</pattern>
-						<shadedPattern>de.simonsator.partyandfriends.extentions.teleporttofriends.paperlib</shadedPattern> <!-- Replace this -->
-					</relocation>
-				</relocations>
-			</configuration>
-			<executions>
-				<execution>
-					<phase>package</phase>
-					<goals>
-						<goal>shade</goal>
-					</goals>
-				</execution>
-			</executions>
-		</plugin>
-	</plugins>
 </project>

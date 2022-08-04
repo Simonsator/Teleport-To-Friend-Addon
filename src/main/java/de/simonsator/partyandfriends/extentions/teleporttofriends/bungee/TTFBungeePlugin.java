@@ -8,8 +8,8 @@ import net.md_5.bungee.config.Configuration;
 
 import java.io.File;
 import java.io.IOException;
-@SuppressWarnings("unused")
 
+@SuppressWarnings("unused")
 public class TTFBungeePlugin extends PAFExtension {
 	@Override
 	public void onEnable() {

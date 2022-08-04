@@ -2,5 +2,6 @@ name: Teleport-To-Friend-PAF-Extension
 version: ${project.version}
 author: Simonsator
 depend: [PartyAndFriendsGUI]
+depends: [PartyAndFriendsGUI]
 main: de.simonsator.partyandfriends.extentions.teleporttofriends.bukkit.TTFBukkitPlugin
 description: An add-on for party and friends extended to teleport players to their friend if they jump to him

@@ -15,8 +15,8 @@ import java.nio.file.Path;
 		url = "https://www.spigotmc.org/resources/51060/", description = "Loads Teleport To Friend PAF Extension", authors = {"JT122406", "Simonsator"}, dependencies = {@Dependency(id = "partyandfriends")})
 
 public class TTFVelocityLoader {
-	private final Path folder;
 	public static ProxyServer server = null;
+	private final Path folder;
 
 	@Inject
 	public TTFVelocityLoader(@DataDirectory final Path folder, ProxyServer server) {

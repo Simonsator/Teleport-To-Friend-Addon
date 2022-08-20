@@ -29,7 +29,7 @@ public class TTFVelocityLoader {
 	@Subscribe
 	public void onProxyInitialization(ProxyInitializeEvent event) {
 		PAFPlugin.loadExtension(new VelocityExtensionLoadingInfo(new TTFVelocityPlugin(folder),
-				"Teleport-To-Friend-PAF-Extension",
+				"teleport-to-friend-paf-extension",
 				"An add-on for party and friends extended to teleport players to their friend when they jump to them",
 				"1.0.2-RELEASE", "JT122406"));
 	}

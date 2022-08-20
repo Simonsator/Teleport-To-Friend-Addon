@@ -28,7 +28,7 @@ public class SendTeleportTask extends SpigotCommunicationTask {
             OnlinePAFPlayer friend = pEvent.getFriendToJumpTo();
             if (player.hasPermission(PERMISSION))
                 if (!player.getServer().equals(friend.getServer()))
-                    TTFVelociyLoader.server.getScheduler().buildTask(PLUGIN, () -> sendTeleportToPlayer(player, friend)).delay(DELAY, TimeUnit.SECONDS).schedule();
+                    TTFVelocityLoader.server.getScheduler().buildTask(PLUGIN, () -> sendTeleportToPlayer(player, friend)).delay(DELAY, TimeUnit.SECONDS).schedule();
 
                 else sendTeleportToPlayer(player, friend);
         }

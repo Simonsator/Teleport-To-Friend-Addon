@@ -24,7 +24,7 @@ public class TTFVelocityPlugin extends PAFExtension {
 			BukkitBungeeAdapter.getInstance().registerListener(new SendTeleportTask(config.getLong("TeleportDelay"), this, config.getString("Permission")),
 					this);
 			for (String serverS : config.getStringList("TeleportToPlayerServers")) {
-				((Jump) Friends.getInstance().getSubCommand(Jump.class)).doNotCheckForSameServer(TTFVelociyLoader.server.getServer(serverS).get().getServerInfo());
+				((Jump) Friends.getInstance().getSubCommand(Jump.class)).doNotCheckForSameServer(TTFVelocityLoader.server.getServer(serverS).get().getServerInfo());
 			}
 			registerAsExtension();
 		} catch (IOException e) {

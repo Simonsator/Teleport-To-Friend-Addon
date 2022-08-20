@@ -11,7 +11,7 @@ import de.simonsator.partyandfriends.velocity.main.PAFPlugin;
 
 import java.nio.file.Path;
 
-@Plugin(id = "Teleport-To-Friend-PAF-Extension", name = "TeleportToFriendsAddon", version = "1.0.2-RELEASE",
+@Plugin(id = "teleport-to-friend-paf-extension", name = "TeleportToFriendsAddon", version = "1.0.2-RELEASE",
         url = "https://www.spigotmc.org/resources/teleport-jump-extension-for-party-and-friends-extended-edition-for-bungeecord.51060/", description = "Velocity Port", authors = {"JT122406"})
 public class TTFVelociyLoader {
     private final Path folder;

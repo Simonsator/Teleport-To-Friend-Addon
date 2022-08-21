@@ -13,7 +13,7 @@ import de.simonsator.partyandfriends.velocity.main.PAFPlugin;
 
 import java.nio.file.Path;
 
-@Plugin(id = "teleport-to-friend-paf-extension", name = "TeleportToFriendsAddon", version = "1.0.2-RELEASE",
+@Plugin(id = "teleport-to-friend-paf-extension", name = "TeleportToFriendsAddon", version = "1.0.3-RELEASE",
 		url = "https://www.spigotmc.org/resources/51060/", description = "Loads Teleport To Friend PAF Extension", authors = {"JT122406", "Simonsator"}, dependencies = {@Dependency(id = "partyandfriends")})
 
 public class TTFVelocityLoader {
@@ -31,6 +31,6 @@ public class TTFVelocityLoader {
 		PAFPlugin.loadExtension(new VelocityExtensionLoadingInfo(new TTFVelocityPlugin(folder),
 				"teleport-to-friend-paf-extension",
 				"An add-on for party and friends extended to teleport players to their friend when they jump to them",
-				"1.0.2-RELEASE", "JT122406"));
+				"1.0.3-RELEASE", "JT122406"));
 	}
 }

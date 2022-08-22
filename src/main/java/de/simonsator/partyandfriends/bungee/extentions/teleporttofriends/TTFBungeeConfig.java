@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.extentions.teleporttofriends.bungee;
+package de.simonsator.partyandfriends.bungee.extentions.teleporttofriends;
 
 import de.simonsator.partyandfriends.api.PAFExtension;
 import de.simonsator.partyandfriends.utilities.ConfigurationCreator;

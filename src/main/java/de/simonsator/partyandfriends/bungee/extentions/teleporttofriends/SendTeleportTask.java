@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.extentions.teleporttofriends.bungee;
+package de.simonsator.partyandfriends.bungee.extentions.teleporttofriends;
 
 import com.google.gson.JsonObject;
 import de.simonsator.partyandfriends.api.PAFExtension;

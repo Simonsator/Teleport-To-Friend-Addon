@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.extentions.teleporttofriends.bukkit;
+package de.simonsator.partyandfriends.bukkit.extentions.teleporttofriends;
 
 import com.google.gson.JsonObject;
 import de.simonsator.partyandfriendsgui.communication.tasks.CommunicationTask;

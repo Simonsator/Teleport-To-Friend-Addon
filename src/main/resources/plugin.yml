@@ -3,5 +3,5 @@ version: ${project.version}
 author: Simonsator
 depend: [PartyAndFriendsGUI]
 depends: [PartyAndFriendsGUI]
-main: de.simonsator.partyandfriends.extentions.teleporttofriends.bukkit.TTFBukkitPlugin
+main: de.simonsator.partyandfriends.bukkit.extentions.teleporttofriends.TTFBukkitPlugin
 description: An add-on for party and friends extended to teleport players to their friend when they jump to them

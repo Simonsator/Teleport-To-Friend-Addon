@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.extentions.teleporttofriends.velocity;
+package de.simonsator.partyandfriends.velocity.extentions.teleporttofriends;
 
 
 import de.simonsator.partyandfriends.velocity.api.PAFExtension;

@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.extentions.teleporttofriends.velocity;
+package de.simonsator.partyandfriends.velocity.extentions.teleporttofriends;
 
 import com.google.gson.JsonObject;
 import com.velocitypowered.api.event.Subscribe;

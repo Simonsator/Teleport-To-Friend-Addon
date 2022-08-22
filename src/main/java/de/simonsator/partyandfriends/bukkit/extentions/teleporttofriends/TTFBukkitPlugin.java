@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.extentions.teleporttofriends.bukkit;
+package de.simonsator.partyandfriends.bukkit.extentions.teleporttofriends;
 
 import de.simonsator.partyandfriendsgui.communication.BungeecordCommunication;
 import org.bukkit.plugin.java.JavaPlugin;

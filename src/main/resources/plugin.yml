@@ -1,4 +1,5 @@
 name: Teleport-To-Friend-PAF-Extension
+api-version: 1.13
 version: ${project.version}
 author: Simonsator
 depend: [PartyAndFriendsGUI]
